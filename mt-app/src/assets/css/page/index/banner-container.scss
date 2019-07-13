@@ -1,0 +1,337 @@
+.banner-container {
+    width: 1190px;
+    margin: 0 auto;
+    .menu{
+       width: 230px;
+       height: 475px;
+       position: relative;
+       background: linear-gradient(-180deg,rgba(2,181,157,.85) 2%  ,rgba(22,146,183,.85) 100%);
+       color: #fff;
+       margin-top: -50px;
+     dd{
+         padding: 20px;
+    }
+     .nav-dt {
+         position: relative;
+         font-size: 13px;
+         height: 26px;
+         line-height: 26px;
+         padding: 2px 12px;
+         .nav-icon {
+            font-family: 'meituan';
+            font-size: 14px;
+            font-style: normal;
+            opacity: 0.3;
+            margin-right: 11px;
+            &::before {
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+            }
+         }
+         &:hover{
+             i{
+                opacity: 1;
+             }
+             background: rgba(225, 255, 255, .2);
+         }
+        .food {
+            &:before {
+              content: "\e622";
+            }
+        }
+  
+          .takeout {
+            &:before {
+              content: "\e630";
+            }
+          }
+  
+          .hotel {
+            &:before {
+              content: "\e62a";
+            }
+          }
+  
+          .homestay {
+            &:before {
+              content: "\e631";
+            }
+          }
+  
+          .movie {
+            &:before {
+              content: "\e62c";
+              position: relative;
+              left: -2px;
+            }
+          }
+  
+          .airport {
+            &:before {
+              content: "\e632";
+            }
+          }
+  
+          .ktv {
+            &:before {
+              content: "\e627";
+            }
+          }
+  
+          .life {
+            &:before {
+              content: "\e633";
+            }
+          }
+  
+          .hair {
+            &:before {
+              content: "\e626";
+              transform: scale(0.7);
+            }
+          }
+  
+          .marry {
+            &:before {
+              content: "\e629";
+            }
+          }
+  
+          .offspring {
+            &:before {
+              content: "\e623";
+            }
+          }
+  
+          .sport {
+            &:before {
+              content: "\e62b";
+            }
+          }
+  
+          .furniture {
+            &:before {
+              content: "\e625";
+            }
+          }
+  
+          .study {
+            &:before {
+              content: "\e624";
+            }
+          }
+  
+          .health {
+            &:before {
+              content: "\e628";
+            }
+          }
+  
+          .bar {
+            &:before {
+              content: "\e621";
+            }
+          }
+  
+        .arrow {
+            width: 4px;
+            height: 4px;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            transform: rotate(-45deg);
+            display: block;
+            position: absolute;
+            right: 13px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            opacity: 1;
+          }
+     }
+     .detail-wrapper {
+        padding:0 30px;
+        position: absolute;
+        left: 230px;
+        bottom: 0;
+        width: 400px;
+        height: 416px;
+        box-sizing: border-box;
+        color: #999;
+        background: #fff;
+        z-index: 9999;
+        .detail-content{
+            margin-top: 20px;
+            span{
+                font-size: 12px;
+            }
+            .detail-content-header{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom:15px;
+                h4{
+                   color: #000;
+                   font-weight: lighter;
+                }
+            }
+            .detail-content-main{
+                span{
+                    font-size: 12px;
+                    line-height: 15px;
+                    display: inline-block;
+                    margin-right: 16px;
+                    margin-top: 10px;
+                    cursor: pointer;
+                    &:hover {
+                        color:#1fcbb5;
+                    }
+                }
+            }
+        }
+    }
+ }
+    .right-banner{
+      position: relative;
+      margin-top: 10px;
+      left: -5px;
+      .home-header-links{
+        position: absolute;
+        top: -45px;
+        left: 35px;
+        li{
+          display: inline-block;
+          cursor: pointer;
+          margin: 0 20px;
+          font-weight: 600;
+          &:nth-child(1):hover,&:nth-child(4):hover {
+             color: #fbc700;
+          }
+          &:nth-child(2):hover,
+          &:nth-child(3):hover,
+          &:nth-child(6):hover{
+            color: #f04d4e;
+         }
+         &:nth-child(5):hover{
+            color: #1fcbb5;
+         }
+        }
+      }
+      .swiper-container{
+        width: 550px;
+        height: 240px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .pic-1{
+        background-image:url(http://p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg);
+        width: 150px;
+        height: 240px;
+        margin: 0 10px;
+        background-size: 150px;
+      }
+      .login-container{
+        width: 220px;
+        height: 240px;
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        box-sizing: border-box;
+        .head-img {
+          margin: 0 auto 4px;
+          text-align: center;
+          margin-top: 30px;
+           >img {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            border: 4px solid #E5E5E5;
+           }
+        }
+        .userName{
+          text-align: center;
+        }
+        >a {
+          width: 118px;
+          text-align: center;
+          margin: 10px auto 15px;
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 40px;
+          font-size: 14px;
+          color: #333;
+          transition: background-color .5s;
+          display: block;
+          line-height: 38px;
+          &:hover {
+            background-color: #f1f1f1;
+            transition: background-color 1s;
+          }
+        }
+      }
+      .show {
+        margin-top: 10px;
+        margin-right: 10px;
+        %same-style{
+          height: 165px;
+          width: 100%;
+          background-size: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        &:nth-child(1), &:nth-child(2) {
+           width: 270px;
+        }
+        .pic-2 {
+          @extend  %same-style;
+          background-image:url(http://p1.meituan.net/codeman/8cce56c467a17e04f3094d1e455462a0132772.png);
+        }
+        .pic-3 {
+          @extend  %same-style;
+          background-image:url(http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg);
+        }
+        &:nth-child(3) {
+          width: 150px;
+        }
+        .pic-4 {
+          @extend  %same-style;
+          background-image:url(http://p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg);
+        }
+        
+      }
+      .download {
+          width: 220px;
+          height: 165px;
+          margin-right: 0;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          text-align: center;
+          .qrcode-box{
+            margin: 10px auto 0;
+            >img {
+              width: 95px;
+              height: 95px;
+            }
+           
+          }
+          .app-name {
+            font-size: 16px;
+            color: #222;
+            font-weight: 500;
+          }
+          .sl {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 2px;
+            .red {
+              color: #EC5330;
+              margin-right: 5px;
+            }
+            .gray {
+              color:#3f3f3f
+            }
+          }
+        }
+    }   
+}

@@ -1,0 +1,192 @@
+//定义公共颜色值参数及参数值
+$color:#1fcbb5;
+$color1:#999;
+//header区的topBar
+.fatherBar{
+    width: 100%;
+    background-color: #f5f5f5;
+.topBar{
+    //设置导航栏的高度等属性
+    width: 1190px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    font-family: "-apple-system",BlinkMacSystemFont,Roboto,"Helvetica Neue","MIcrosoft YaHei",sans-serif!important;
+    color: $color1;
+    background: #f5f5f5;
+    %sameCode{
+        &:hover{
+            color: $color;
+            cursor: pointer;
+        }
+    }
+    //地址区
+    @at-root .geo{
+        //text-align: center;
+        //margin-left: 80px;
+       .detail{
+          >span{
+              margin: 0 4px;
+              @extend %sameCode;
+          } 
+       } 
+       .changeCity{
+        background: #F4F4F4;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        color: #666;
+        margin: 0 4px;
+        padding: 0 2px;
+        @extend %sameCode;
+       }
+       .login{
+        color: $color ;
+        margin-left: 20px;
+       }
+      .register{
+        @extend %sameCode;
+        margin-left: 10px;
+      }
+    }
+    //导航选项区
+    @at-root .nav{
+      text-align: right;
+      //margin-right: 70px;
+      >div{
+          display: inline-block;
+          width: 80px;
+          height: 40px;
+          text-align: center;
+          position: relative;
+          //防止抖动
+          box-sizing: border-box;
+          >dl{
+             display: none;
+             position: absolute;
+             top: 40px;
+         }
+      }
+      //定义随参数不同产生不同的style
+      @mixin hoverCreateStyle($width, $right:-1px) {
+        z-index: 1;
+        background: #fff;
+        border: 1px solid #dadada;
+        border-bottom: none;
+        border-top: none;
+        >a{
+            color: $color;
+        }
+        dl{
+            display: block;
+            width: $width;
+            border: 1px solid #dadada;
+            background: #fff;
+            right: $right;
+            a:hover{
+               color: $color;
+            }
+            &:before {
+                content: " ";
+                display: block;
+                background: #fff;
+                height: 4px;
+                width: 78px;
+                position: absolute;
+                top: -1px;
+                right: 0;
+          }
+        }
+      }
+     .my:hover{
+        @include hoverCreateStyle(100%);
+     }
+     .bd:hover{
+        @include hoverCreateStyle(100px);
+     }
+
+     @at-root .subContainer{
+         display: none;
+         position: absolute;
+     }
+     .site:hover{
+        z-index: 99999;
+        background: #fff;
+        border: 1px solid #dadada;
+        border-bottom: 0;
+        border-top: none;
+        >a{
+            color: $color;
+        }
+        & .subContainer{
+            display: flex;
+            background: #fff;
+            border: 1px solid #dadada;
+            height: 300px;
+            width: 1200px;
+            right: -1px;
+            a:hover{
+                color: $color;
+             }
+            &:before {
+                   content: " ";
+                   display: block;
+                   background: #fff;
+                   height: 4px;
+                   width: 78px;
+                   position: absolute;
+                   top: -1px;
+                   right: 0;
+             }
+            >dl{
+                margin-top: 20px;
+                >dt{
+                    color: #1fcbb5;
+                    font-size: 16px;
+                }
+            }
+            @mixin getComStyle($width, $margin-left, $height:30px) {
+                width: $width;
+                margin-left: $margin-left;
+                text-align: center;
+                .content{
+                    display: flex;
+                    >div{
+                        dd{
+                            height: $height;
+                        }
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .hotel{
+               @include getComStyle(300px, 20px);
+            }
+            .food{
+                @include getComStyle(200px, 30px);
+            }
+            .movie{
+                width: 60px;
+                margin-left: 30px;
+                dd{
+                    height: 35px;
+                }
+            }
+            .app{
+                width: 500px;
+                margin-left: 100px;
+                .appicon{
+                    margin: 10px 0 0 8px;
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+     }
+    }
+}
+}
+a{
+    text-decoration: none;
+    color: $color1;
+}

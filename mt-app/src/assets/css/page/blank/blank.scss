@@ -1,0 +1,307 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: 'iconfont';
+    /* project id 682850 */
+    src: url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.eot');
+    src: url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.eot?#iefix') format('embedded-opentype'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.woff') format('woff'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.ttf') format('truetype'),
+      url('//at.alicdn.com/t/font_682850_58yfbhz7jvf.svg#iconfont') format('svg');
+  }
+a{
+    //display: inline-block;
+    text-decoration: none;
+}
+.main-container {
+    .register-container{
+        .header{
+            border-bottom: 2px solid #2bb8aa;
+            color: #666;
+        .header-child {
+            width: 980px;
+            margin: 0 auto;
+            padding: 10px 0;
+            .site-logo {
+                display: inline-block;
+                width: 54px;
+                height: 36px;
+                background-position: -669px -748px;
+                background-image: url('https://s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/sp-normal.2ee5c09.png');
+            }
+            .logo-block {
+                float: right;
+                line-height: 36px;
+                font-size: 14px;
+                .tip {
+                    margin-right: 10px;
+                }
+                .login-btn {
+                    padding: 3px 10px;
+                    font-size: 12px ;
+                    display: inline-block;
+                    line-height: 1.5;
+                    border-radius: 2px;
+                    letter-spacing: .1em;
+                    color: #fff;
+                    background-color: #2db3a6;
+                    background-image: linear-gradient(to bottom,#2ec3b4,#2db3a6);
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        }
+        .middle{
+            width: 980px;
+            margin: 0 auto;
+            padding-top: 25px;
+            .el-input__inner {
+                width: 260px;
+                height: 36px;
+                border-radius: 0 !important;
+            }
+            .el-form-item__content{
+                line-height:normal;
+            }
+            .el-form-item__error {
+                left: 265px;
+                top: 18px;
+                padding-top: 0px;
+                transform: translateY(-50%);
+            }
+            .pk_strength_bar {
+                 width: 260px;
+                 background: #eee;
+                 transform: translateY(10px);
+                 .pk_strength_letter_mock{
+                     height: 20px;
+                     width: 0px;
+                     //background-color: #2bb8aa;
+                     overflow: hidden;
+                     transition: all 400ms linear;
+                     &.weak{
+                         width: 85px;
+                         background-color: #f76120;
+                         transition: all 400ms linear;
+                     }
+                     &.moderate{
+                        width: 172px;
+                        background-color: #ff8900;
+                        transition: all 400ms linear;
+                    }
+                    &.strong {
+                        width: 260px;
+                        background-color:#5bab3c;
+                        transition: all 400ms linear;
+                    }
+                 }
+                 .pk_strength_letter {
+                     font-size: 0;
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     >span{
+                     display: inline-block;
+                     width: 85px;
+                     height: 20px;
+                     line-height: 20px;
+                     font-size: 12px;
+                     color: #fff;
+                     border-right: 2px solid #fff;
+                     text-align: center;
+                     &.no-marginRight{
+                        border-right: 0px;
+                     }
+                     }
+
+                 }
+            }
+            .btn-container {
+                margin-left: 100px;
+                .el-button--primary {
+                    span {
+                        letter-spacing: .1em;
+                    }
+                }
+                .term {
+                    padding: 10px 10px 3px 0px;
+                    margin: 0 auto 8px;
+                    font-size: 14px;
+                    .f1{
+                        color: #2bb8aa;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 14px;
+            .copyright {
+                a{
+                    color: #999;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .login-container {
+        width: 980px;
+        margin: 0 auto;
+        .header {
+             margin: 40px auto 30px;
+            .site-logo{
+               display: inline-block;
+               width: 82px;
+               height: 54px;
+               background-position: -188px -808px;
+               background-image: url(//s0.meituan.net/bs/file/?f=fe-sso-fs:build/assets/sp-normal.2ee5c09.png);
+       }
+     }
+     .site-body-wrapper {
+         display: flex;
+         .promotion-banner {
+             margin-right: 115px;
+         }
+         .login-section {
+             width: 270px;
+             font-size: 14px;
+             .validate-info {
+                 padding: 10px;
+                 margin-bottom: 10px;
+                 border:1px solid #f5d8a7;
+                 border-radius: 2px;
+                 background: #fff6db;
+                 .el-icon-error {
+                     color: red;
+                 }
+             }
+             .login-title {
+                 color: #666;
+                 display: flex;
+                 justify-content: space-between;
+             }
+             .input {
+                 padding: 10px 0;
+
+                 &.password-input {
+                     padding-top: 0;
+                 }
+                 &.error {
+                     .el-input__inner{
+                         border-color: #f76120;
+                     }
+                 }
+                 .el-input__icon {
+                    &.profile {
+                      &:after {
+                        font-family: iconfont;
+                        content: "\e627";
+                        font-style: normal;
+                        top: -1px;
+                        left: 5px;
+                        position: absolute;
+                      }
+                    }
+                    &.password {
+                        &:after {
+                          font-family: iconfont;
+                          content: "\E600";
+                          font-style: normal;
+                          top: -1px;
+                          left: 3px;
+                          position: absolute;
+                          font-size: 18px;
+                        }
+                      }
+                }            
+             }
+             .forget-pwd {
+                 padding-bottom: 20px;
+                 position: relative;
+                 a{
+                    display: block;
+                     position: absolute;
+                     right: 0;
+                     font-size: 12px;
+                     color: #2bb8aa;
+                 }
+             }
+             .login-btn {
+                 margin-top: 10px;
+                 padding: 8px 0;
+                 color: white;
+                 font-weight: 600;
+                 letter-spacing: .1em;
+                 text-align: center;
+                 background: #2bb8aa;
+                 background-size: 100%;
+                 cursor: pointer;
+                 border-radius: 2px;
+                 border-color: #008177;
+                 background-image: linear-gradient(to bottom,#2ec3b4,#2db3a6);
+                 &:hover {
+                    background-image: linear-gradient(to bottom,#2bb8aa,#2bb8aa);
+                 }
+             }
+             .to-register {
+                 padding: 10px 0;
+                 color: #666;
+                 a{
+                     color: #2bb8aa;
+                     &:hover {
+                         text-decoration: underline;
+                     }
+                 }
+             }
+         }
+     }
+     .footer {
+        .site-info-nav {
+         margin-bottom: 20px;
+         padding: 12px 0;
+         border-top: 1px solid #EEE;
+         border-bottom: 1px solid #EEE;
+         ul{
+             width: 594px;
+             color: #999;
+             font-size: 12px;
+             >li{
+                 list-style: none;
+                 &.first {
+                     padding-left: 0;
+                 }
+                 display: inline-block;
+                 margin: 5px 0;
+                 padding: 0 16px;
+                 line-height: 14px;
+                 border-right: 1px solid #EEE;
+                 cursor: pointer;
+                 &:hover {
+                     text-decoration: underline;
+                 }
+             }
+         }
+        }
+        .copyright {
+            font-size: 12px;
+            color: #999;
+         a{
+            color: #999;
+             &:hover{
+                 text-decoration: underline;
+             }
+         }
+     }
+    }
+    }
+}
